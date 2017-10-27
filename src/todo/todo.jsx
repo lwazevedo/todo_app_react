@@ -27,14 +27,14 @@ export default class Todo extends Component {
     }
 
     refresh() {
+        const page = 0
+        const limit = 4
         axios
-            .get(URL)
+            .get(`${URL}?_page=${page}&_limit=${limit}`)
             .then(resp => this.setState({
                 ...this.state,
                 description: '',
-                list: resp
-                    .data
-                    .filter((value, key) => key < 4)
+                list: resp.data
             }))
     }
 
