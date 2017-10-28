@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import _ from 'lodash'
 
-import PageHeader from '../template/pageHeader'
+import PageHeader from '../commons/template/pageHeader'
 import TodoForm from '../todo/todoForm'
 import TodoList from '../todo/todoList'
 
@@ -12,6 +13,9 @@ export default class Todo extends Component {
         super(props)
         this.state = {
             description: '',
+            userId: '',
+            title: '',
+            valid: true,
             list: []
         }
         this.handleAdd = this
@@ -34,25 +38,42 @@ export default class Todo extends Component {
             .then(resp => this.setState({
                 ...this.state,
                 description: '',
+                userId: '',
+                title: '',
+                valid: true,
                 list: resp.data
             }))
     }
 
     handleChange(e) {
+        const target = e.target
+        const value = target.value
+        const name = target.name
+
         this.setState({
             ...this.state,
-            description: e.target.value
+            [name]: value,
+            valid: true
         })
     }
 
     handleAdd() {
-        const description = this.state.description
+
+        const post = {
+            userId: this.state.userId,
+            title: this.state.title,
+            body: this.state.description
+        }
+
+        if (_.isEmpty(post.userId) || _.isEmpty(post.title) || _.isEmpty(post.body)) {
+            this.setState({
+                ...this.state,
+                valid: false
+            })
+            return
+        }
         axios
-            .post(URL, {
-            userId: 10,
-            title: 'oii',
-            body: description
-        })
+            .post(URL, post)
             .then(resp => this.refresh())
 
     }
@@ -66,12 +87,18 @@ export default class Todo extends Component {
     render() {
         return (
             <div>
-                <PageHeader name='Tarefas' small='Cadastro'></PageHeader>
+                <PageHeader name='Posts' small='Enviados'></PageHeader>
+                <TodoList list={this.state.list} handleRemove={this.handleRemove}/>
+                <PageHeader name='' small='Enviar Post'></PageHeader>
                 <TodoForm
                     description={this.state.description}
+                    userId={this.state.userId}
+                    title={this.state.title}
+                    valid={this.state.valid}
                     handleChange={this.handleChange}
                     handleAdd={this.handleAdd}/>
-                <TodoList list={this.state.list} handleRemove={this.handleRemove}/>
+                
+
             </div>
         )
     }
