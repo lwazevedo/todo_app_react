@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import _ from 'lodash'
 
 import ContentHeader from '../commons/template/contentHeader'
 import Content from '../commons/template/content'
