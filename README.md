@@ -22,6 +22,7 @@
     * Modolarizar o formulario de criar post
     * Alguns detalhes do layout
     * Aplicar testes unitátios
+    * Validações da aplicação
 
 
 * Pós o clone - 
