@@ -51,7 +51,7 @@ class DashboardReact extends Component {
     render() {
         return (
             <div>
-                <ContentHeader title='Lista de Posts' small='Versão 0.1'/>
+                <ContentHeader title='Lista de Posts - React ' small='Versão 0.1'/>
                 <Content>
                     <Row>
                         <Box

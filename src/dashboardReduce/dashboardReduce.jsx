@@ -46,7 +46,7 @@ class DashboardReduce extends Component {
         return (
 
             <div>
-                <ContentHeader title='DS' small='Versão 0.1'/>
+                <ContentHeader title='Lista de Posts - Redux ' small='Versão 0.1'/>
                 <Content>
                     <Row>
 
