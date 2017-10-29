@@ -4,7 +4,6 @@ import MenuTree from './menuLateralTree'
 
 export default props => (
     <ul className='sidebar-menu'>
-        <MenuLateralItem path='#' label='Dashboard' icon='dashboard'/>
         <MenuTree label='React' icon='th-large'>
             <MenuLateralItem path='#dashboard-react' label='Posts' icon='list-ul'/>
             <MenuLateralItem
@@ -14,6 +13,7 @@ export default props => (
         </MenuTree>
         <MenuTree label='React-Redux' icon='th-large'>
             <MenuLateralItem path='#dashboard-reduce' label='Posts' icon='list-ul'/>
+            <MenuLateralItem path='#create-post-reduce' label='Criar Posts' icon='circle-o-notch'/>
         </MenuTree>
     </ul>
 )

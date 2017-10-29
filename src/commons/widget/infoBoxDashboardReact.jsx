@@ -5,7 +5,7 @@ import IconButton from '../template/iconButton'
 
 export default props => (
     <Grid cols={props.cols} key={props.id}>
-        <div className={`info-box bg-${props.colorBox}`} key={props.id}>
+        <div className={`info-box bg-${props.colorBox}`} key={props.id + 1}>
             <If test={!props.hideSpan}>
                 <span className={`info-box-icon bg-${props.colorIcon}`}>
                     <i className={`fa fa-${props.icon}`}></i>
