@@ -13,7 +13,7 @@ export default props => (
                 icon='circle-o-notch'/>
         </MenuTree>
         <MenuTree label='React-Redux' icon='th-large'>
-            <MenuLateralItem path='#' label='Posts' icon='list-ul'/>
+            <MenuLateralItem path='#dashboard-reduce' label='Posts' icon='list-ul'/>
         </MenuTree>
     </ul>
 )

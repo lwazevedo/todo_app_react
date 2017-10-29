@@ -5,7 +5,7 @@ import Content from '../commons/template/content'
 import ValueBox from '../commons/widget/valueBox'
 import Row from '../commons/layout/row'
 
-class Dashboard extends Component {
+class DashboardReduce extends Component {
     render(){
         return (
             <div>
@@ -27,4 +27,4 @@ class Dashboard extends Component {
     }
 }
 
-export default Dashboard
+export default DashboardReduce
