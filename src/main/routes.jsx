@@ -1,15 +1,15 @@
 import React from 'react'
 import {Router, Route, Redirect, hashHistory} from 'react-router'
 
-import Todo from '../todo/todo'
 import About from '../about/about'
-import Dashboard from '../dashboard/dashboard'
+import DashboardReact from '../dashboardReact/dashboardReact'
+import CreatePostReact from '../createPostReact/createPostReact'
 
 export default props => (
     <Router history={hashHistory}>
-        <Route path='/todos' component={Todo}/>
-        <Route path='/about' component={About}/>
-        <Route path='/' component={Dashboard}/>
+        <Route path='/dashboard-react' component={DashboardReact}/>
+        <Route path='/create-post-react' component={CreatePostReact}/>
+        <Route path='/' component={DashboardReact}/>
         <Redirect from='*' to='/' />
     </Router>
 )
