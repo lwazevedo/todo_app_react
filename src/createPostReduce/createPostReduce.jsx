@@ -11,6 +11,7 @@ import TabsContent from '../commons/tab/tabsContent'
 import TabHeader from '../commons/tab/tabHeader'
 import TabContent from '../commons/tab/tabContent'
 import {selectTab, showTabs} from '../commons/tab/tabActions'
+import List from './postList'
 
 class CreatePostReduce extends Component {
 
@@ -34,7 +35,9 @@ class CreatePostReduce extends Component {
                             <TabHeader label=' Excluir' icon='trash-o' target='tabDelete'/>
                         </TabsHeader>
                         <TabsContent>
-                            <TabContent id='tabList'><h1>Lista</h1></TabContent>
+                            <TabContent id='tabList'>
+                                <List />
+                            </TabContent>
                             <TabContent id='tabCreate'><h1>Incluir</h1></TabContent>
                             <TabContent id='tabUpdate'><h1>Alterar</h1></TabContent>
                             <TabContent id='tabDelete'><h1>Excluir</h1></TabContent>
