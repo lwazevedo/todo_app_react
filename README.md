@@ -23,6 +23,7 @@
     * Alguns detalhes do layout - (ok)
     * Aplicar testes unitátios
     * Validações da aplicação (Parte do React)
+    * Melhorar nomes de alguns arquivos e objetos para que fica mais claro a organização. 
 
 
 * Pós o clone - 
