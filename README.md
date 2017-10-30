@@ -8,21 +8,21 @@
     * Ler - Ok
     * Criar - Ok
     * Deletar - Falta implementar
-    * Pesquisar - Falta implementar
+    * filtro - Falta implementar
     
 
 * React + Redux
-    * Ler - em andamento
-    * Criar - em andamento
+    * Ler - Ok
+    * Criar - Ok
     * Deletar - Falta implementar
-    * Pesquisar - Falta implementar
+    * filtro - Falta implementar
 
 
 * O que pode ser mehorado ? 
     * Modolarizar o formulario de criar post
-    * Alguns detalhes do layout
+    * Alguns detalhes do layout - (ok)
     * Aplicar testes unitátios
-    * Validações da aplicação
+    * Validações da aplicação (Parte do React)
 
 
 * Pós o clone - 
@@ -31,4 +31,4 @@
     * Executar npm run dev ou npm run production
 
 * Para o layout foi usado o template adminLte bem como o bootstrap.
-  * Ajustes no layoute - em andamento
+  * Ajustes no layoute - (ok)

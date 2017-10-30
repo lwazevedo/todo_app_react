@@ -9,7 +9,7 @@ import ContentHeader from '../commons/template/contentHeader'
 import Content from '../commons/template/content'
 import Row from '../commons/layout/row'
 import InfoBox from '../commons/widget/infoBoxDashboardReact'
-
+import Box from '../commons/widget/box'
 class DashboardReduce extends Component {
 
     componentWillMount() {
@@ -49,7 +49,11 @@ class DashboardReduce extends Component {
                 <ContentHeader title='Lista de Posts - Redux ' small='Versão 0.1'/>
                 <Content>
                     <Row>
-
+                    <Box
+                            cols='12'
+                            color='primary'
+                            title='4 PRIMEIROS DA LISTA'
+                            hideBtn='true'/>
                         {this.montaBox()}
 
                     </Row>

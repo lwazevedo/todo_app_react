@@ -21,7 +21,7 @@ export default props => (
         </If>
         <div className='box box-info text-aling-center'>
             <div className="box-header with-border">
-                <h3 className="box-title">Novo Post</h3>
+                <h3 className="box-title">Novo Post - React</h3>
             </div>
             <div role='form' className='form-horizontal'>
             {/* <form className='form-horizontal'> */}
