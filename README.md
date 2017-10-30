@@ -1,6 +1,6 @@
 # todo_app_react
   Simples aplicação com react e redux que lê dados da api externa (https://jsonplaceholder.typicode.com/posts/).
-  Tem como objetivo inicial ler e criar dados através da api sitada.
+  Tem como objetivo inicial ler e criar dados através da api citada.
 
 # Esta aplicação se divide nas seguintes partes.
 
